@@ -287,3 +287,20 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,pycharm
+
+#Start of manual file exclusions
+*.cia
+*.3ds
+*.3dsx
+*.cci
+*.cxi
+
+/data
+/scripts
+exefs
+romfs
+
+*.dat
+*.bin
+*.msbt
+*.arc

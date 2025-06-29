@@ -1,6 +1,6 @@
 import struct
 import random
-import randomize_repack
+from mldtr import randomize_repack
 from mnllib.n3ds import fs_std_code_bin_path
 from mnllib.dt import load_enemy_stats, save_enemy_stats
 
