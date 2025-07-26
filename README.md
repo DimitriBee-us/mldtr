@@ -1,18 +1,31 @@
-How to install:
-1) Install poetry using python in the terminal: "python3 -m pip install poetry"
-2) Install project dependencies in terminal: "python3 -m poetry install"
-3) Run the program: "python3 -m poetry run python3 -m mldtr"
+Mario and Luigi Pi'illomizer
 
+You will need:
+- A dump of both the RomFS and ExeFS
+- The latest stable release of Pi'illomizer
+How to get the ExeFS:
+- Gamecart method:
+  - Select "SysNand SD" when booting your modded 3DS in GodMode9 by holding start while powering on
+  - Navigate to the ExeFS
+  - Select the .code, then in the options, select extract .code
+  - Put the new code.bin file in a folder called "ExeFS" in the same place you put your RomFS
+- Digital Method:
+  - Select "SysNand CtrNand" when booting your modded 3DS in GodMode9 by holding start while powering up
+  - Enter "titles", "00000000", then navigate to your region's title ID (Can be found here: https://3ds.jdbye.com/?details=USA&split=0&display=0)
+  - Navigate to the ExeFS
+  - Select the .code, then in the options, select extract .code
+  - Put the new code.bin file in a folder called "ExeFS" in the same place you put your RomFS
 How to use:
-1) Click "Open Dump", then locate to your extracted game data (note: it must have a RomFS AND an ExeFS)
-2) Select whatever settings you want
-3) Randomize to your heart's content
-
-How to get RomFS and ExeFS:
-1) Hold START while booting your modded 3DS
-2) Navigate to your game's title ID in either SYSNAND SD (SD Card) or SYSNAND CTRNAND (Game card), which should end in D5A00
-3) Enter the directory, and navigate to the ExeFS and RomFS, then copy them to gm9/out
-4) Move files to your computer, preferrably in a folder titled "00040000000D5A00"
+- Click "Open Dump", then select the folder where you put your RomFS and ExeFS
+- Customize the settings to your heart's content
+- Click "Generate"
+Next steps are different if you want to play on console or on emulator
+- On console
+  - Move the code.bin to the folder outside of your ExeFS and RomFS
+  - Move the entire folder to luma/titles/(title ID) on your 3DS
+- On emulator
+  - Open Azahar, right click on the game, select "Open mods location"
+  - Put the folder in the mods folder, deleting the folder Azahar automatically created
 
 The key items are as follows:
 - Hammers
@@ -37,3 +50,5 @@ The key items are as follows:
 - Access to Mount Pajamaja
 - Dream Eggs
 - Access to Neo Bowser Castle
+
+And one more thing: enjoy!
